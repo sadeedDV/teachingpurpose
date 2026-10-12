@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSpace | Welcome</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: #111c33;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 420px;
+            padding: 100px 8%;
+            text-align: center;
+            background: linear-gradient(135deg, #172554, #581c87);
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            margin-bottom: 18px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 28px;
+            color: #e2e8f0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #7dd3fc;
+        }
+
+        .projects {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 22px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 28px;
+            border-radius: 12px;
+            width: 280px;
+            border: 1px solid #334155;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            background: #111c33;
+            color: #cbd5e1;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 6px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">DevSpace</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Build Your <span>Digital Future</span></h1>
+
+        <p>
+            Welcome to DevSpace! Explore web development,
+            creative projects, and modern technology.
+        </p>
+
+        <a href="#projects" class="button">Explore Projects</a>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>What We Do</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Build responsive and user-friendly websites using HTML and CSS.</p>
+            </div>
+
+            <div class="card">
+                <h3>Creative Design</h3>
+                <p>Create beautiful layouts with modern colors and clean interfaces.</p>
+            </div>
+
+            <div class="card">
+                <h3>Version Control</h3>
+                <p>Manage code changes and collaborate using Git and GitHub.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>Contact: hello@devspace.example</p>
+        <p>&copy; 2026 DevSpace. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
